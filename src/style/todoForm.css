@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+}
+.todo-input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  padding: 0 10px;
+  border-radius: 0.4rem;
+  transition: 300ms all ease;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  color: #3d4142;
+}
+.todo-input:focus {
+  outline: none;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.todo-input::placeholder {
+  color: #b0bec5;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+}
+.form__add {
+  position: absolute;
+  color: #ffc151;
+  font-size: 30px;
+  cursor: pointer;
+  right: 0.5px;
+  transition: 300ms ease all;
+}
+
+.form__add:hover {
+  transform: scale(1.1);
+}
